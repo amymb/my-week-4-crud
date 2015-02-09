@@ -1,0 +1,18 @@
+<h1> Events </h1>
+
+
+
+<% @events.each do |event| %>
+
+  <%=event.date%>
+
+  <%=event.location%>
+
+  <%=event.description%>
+
+  <%=event.capacity%>
+
+  <%=event.requires_id%>
+  <%end%>
+
+<%=link_to "New Event", new_event_path%>
